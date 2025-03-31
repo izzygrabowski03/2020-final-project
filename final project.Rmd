@@ -21,6 +21,7 @@ This data set includes data on adult's diet, physical activity, and weight statu
  2) condense data down using pivot_wider function so there are less rows
  3) delete unnecessary columns
  4) focus on only a few variables such as "age", and "income" in order to interpret results.
+ 5) I think for the questions, we will only focus on one question since there are 9.
  
 
 
@@ -28,9 +29,14 @@ This data set includes data on adult's diet, physical activity, and weight statu
 ```{r cars}
 
 library(readr)
-Nutrition_Physical_Activity_and_Obesity_Behavioral_Risk_Factor_Surveillance_System <- read_csv("~/Downloads/Nutrition__Physical_Activity__and_Obesity_-_Behavioral_Risk_Factor_Surveillance_System.csv")
+data <- read_csv("~/Downloads/Nutrition__Physical_Activity__and_Obesity_-_Behavioral_Risk_Factor_Surveillance_System.csv")
 View(Nutrition_Physical_Activity_and_Obesity_Behavioral_Risk_Factor_Surveillance_System)
 
+
+
+dim(data) # need to condense rows
+
+unique(data$Question) # pick a question to focus on
 
 ```
 
