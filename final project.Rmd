@@ -11,9 +11,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Final Project Proposal
 
-Some information about the data: 
+Some information about the data: pulled from data.gov (https://catalog.data.gov/dataset/nutrition-physical-activity-and-obesity-behavioral-risk-factor-surveillance-system)
+
+This data set includes data on adult's diet, physical activity, and weight status from Behavioral Risk Factor Surveillance System. This data is used for DNPAO's Data, Trends, and Maps database, which provides national and state specific data on obesity, nutrition, physical activity, and breastfeeding.
 
  
+ Some cleaning steps: 
+ 1) remove null rows
+ 2) condense data down using pivot_wider function so there are less rows
+ 3) delete unnecessary columns
+ 4) focus on only a few variables such as "age", and "income" in order to interpret results.
  
 
 
